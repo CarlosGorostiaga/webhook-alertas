@@ -17,11 +17,18 @@ app.use(morgan('tiny')); // Log de cada request en consola
 const upload = multer({ dest: 'uploads/' });
 
 // Diccionario de tipos de alerta → destinatarios (emails separados por ;)
+// const DESTINATARIOS = {
+//   "Alerta PRL": "jose.herrero@tsigrupo.com;fernando.gomez@tsigrupo.com;beatriz.gonzalez@tsigrupo.com",
+//   "DBC ANEXOS MANTTO AlertaPrl": "carlos.gmartos@tsigrupo.com;jgarcia.sanz@tsigrupo.com;ainhoa.perez@tsigrupo.com;david.baz@tsigrupo.com",
+//   "DBC IMAGENKLIN AlertaPrl": "rafael.galan@tsigrupo.com;joseramon.sanchez@tsigrupo.com;david.baz@tsigrupo.com",
+//   "DBC IMGSTOP GO OTROS AlertaPrl": "ainhoa.perez@tsigrupo.com;david.baz@tsigrupo.com"
+// };
+
 const DESTINATARIOS = {
-  "Alerta PRL": "jose.herrero@tsigrupo.com;fernando.gomez@tsigrupo.com;beatriz.gonzalez@tsigrupo.com",
-  "DBC ANEXOS MANTTO AlertaPrl": "carlos.gmartos@tsigrupo.com;jgarcia.sanz@tsigrupo.com;ainhoa.perez@tsigrupo.com;david.baz@tsigrupo.com",
-  "DBC IMAGENKLIN AlertaPrl": "rafael.galan@tsigrupo.com;joseramon.sanchez@tsigrupo.com;david.baz@tsigrupo.com",
-  "DBC IMGSTOP GO OTROS AlertaPrl": "ainhoa.perez@tsigrupo.com;david.baz@tsigrupo.com"
+  "Alerta PRL": "carlosgorospo@gmail.com",
+  "DBC ANEXOS MANTTO AlertaPrl": "carlosgorospo@gmail.com",
+  "DBC IMAGENKLIN AlertaPrl": "carlosgorospo@gmail.com",
+  "DBC IMGSTOP GO OTROS AlertaPrl": "carlosgorospo@gmail.com"
 };
 
 // Configuración del cliente SMTP con credenciales de Outlook/Office 365

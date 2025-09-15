@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log*
+yarn-debug.log*
+pnpm-lock.yaml
+
+.env
+uploads
+
+.git
+.gitignore
+README.md
